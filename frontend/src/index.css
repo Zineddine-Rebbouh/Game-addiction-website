@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-gradient-color {
+    /* background: rgb(99, 92, 226);
+    background: radial-gradient(circle, rgba(99, 92, 226, 1) 21%, rgba(36, 34, 119, 1) 92%); */
+    background: rgb(72, 121, 255);
+    background: radial-gradient(circle, rgba(72, 121, 255, 1) 18%, rgba(54, 78, 237, 1) 92%);
+}
+
+.background-image2 {
+    background-image: url(./assets/images/background-image.jpg);
+    background-position: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.font-custom3 {
+    font-family: 'Pacifico', cursive;
+}
+
+.bg-background-image {
+    background-image: url('./assets/images/group-people-working-out-business-plan-office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.background-image {
+    background-image: url('./assets/images/background-image.jpg');
+}
+
+.background-image-about {
+    background-image: url('./assets/images/top-view-photo-camera-with-copy-space.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 50%;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+}
+
+.font-custom2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    /* Adjust the left value to position the icon */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    /* Adjust the color of the icon */
+}
+
+.curv {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.cruv::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    border-radius: 100% 50%;
+    background-color: #202731;
+    transform: translate(85%, 60%);
+}
+
+.cruv::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    border-radius: 100% 50%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .4s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(55, 139, 235), rgb(75, 145, 236))
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
+
+.font-custom {
+    font-family: 'Bree Serif', serif;
+}
+
+
+.my_profile-bg {
+    width: 340px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.my_profile_user-img {
+    border-radius: 100%;
+    margin-left: -64px;
+}
+
+.property_details-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .my_profile-bg {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .my_profile_user-img {
+        margin-left: 0px;
+        margin-top: -64px;
+    }
+
+    .property_details-img {
+        width: 100%;
+        height: auto;
+    }
+}
